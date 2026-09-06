@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import LoadingScreen from '@/components/LoadingScreen';
 import Navigation from '@/components/Navigation';
-import MusicControl from '@/components/MusicControl';
 import CursorSparkles from '@/components/CursorSparkles';
 import HeroSection from '@/sections/HeroSection';
 import RevealSection from '@/sections/RevealSection';
@@ -12,6 +11,8 @@ import WishGeneratorSection from '@/sections/WishGeneratorSection';
 import ReminderSection from '@/sections/ReminderSection';
 import OneMoreThingSection from '@/sections/OneMoreThingSection';
 import SkyWishesSection from '@/sections/SkyWishesSection';
+import StarsMessageSection from '@/sections/StarsMessageSection';
+import NewChapterSection from '@/sections/NewChapterSection';
 import FinalSection from '@/sections/FinalSection';
 
 function App() {
@@ -47,10 +48,10 @@ function App() {
         <ReminderSection />
         <OneMoreThingSection />
         <SkyWishesSection />
+        <StarsMessageSection />
+        <NewChapterSection />
         <FinalSection />
       </main>
-
-      <MusicControl />
     </>
   );
 }

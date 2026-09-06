@@ -15,7 +15,7 @@ const NAV_ITEMS: NavItem[] = [
   { label: 'Final', target: 'final' },
 ];
 
-const SECTION_IDS = ['hero', 'reveal', 'note', 'sky-year', 'little-things', 'wish-generator', 'reminder', 'one-more-thing', 'sky-wishes', 'final'];
+const SECTION_IDS = ['hero', 'reveal', 'note', 'sky-year', 'little-things', 'wish-generator', 'reminder', 'one-more-thing', 'sky-wishes', 'stars-message', 'new-chapter', 'final'];
 
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -72,11 +72,11 @@ export default function Navigation() {
               className="relative rounded-full px-4 py-1.5 text-sm font-medium text-muted-purple transition-colors hover:text-dusty-purple"
             >
               {activeSection === NAV_ITEMS.indexOf(item) ||
-              (item.target === 'wishes' && activeSection >= 3 && activeSection <= 8) ||
+              (item.target === 'wishes' && activeSection >= 3 && activeSection <= 10) ||
               (item.target === 'note' && activeSection === 2) ||
               (item.target === 'birthday' && activeSection === 1) ||
               (item.target === 'home' && activeSection === 0) ||
-              (item.target === 'final' && activeSection === 9) ? (
+              (item.target === 'final' && activeSection === 11) ? (
                 <span className="text-dusty-purple">{item.label}</span>
               ) : (
                 item.label
